@@ -3,13 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './modules/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
+
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { MainComponent } from './components/main/main.component';
 import { TargetComponent } from './components/target/target.component';
-import { SecondComponent } from './components/second/second.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { FavourComponent } from './components/favour/favour.component';
+
 
 @NgModule({
   declarations: [
@@ -17,14 +19,14 @@ import { FooterComponent } from './components/footer/footer.component';
     NavbarComponent,
     MainComponent,
     TargetComponent,
-    SecondComponent,
-    FooterComponent
+    FooterComponent,
+    FavourComponent
   ],
   imports: [
     BrowserModule,
     NgbModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

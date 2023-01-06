@@ -7,3 +7,10 @@
 .target-color-bg{
   background: RGB(233,236,241)
 }
+html {
+  background-color: RGB(233,236,241);
+}
+
+body {
+  background-color: RGB(233,236,241);
+}
