@@ -6,11 +6,19 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { MainComponent } from './components/main/main.component';
+import { TargetComponent } from './components/target/target.component';
+import { SecondComponent } from './components/second/second.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    MainComponent,
+    TargetComponent,
+    SecondComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

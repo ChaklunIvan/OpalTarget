@@ -4,3 +4,6 @@
   src: url("assets/fonts/AmericanCaptain.otf") format("opentype");
 }
 
+.target-color-bg{
+  background: RGB(233,236,241)
+}
