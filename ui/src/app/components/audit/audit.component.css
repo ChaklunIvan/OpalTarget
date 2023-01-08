@@ -4,3 +4,16 @@
   background-size: cover;
   height: 60vh;
 }
+
+@media (min-width: 1200px) {
+  .responsive-audit {
+    width: 50%;
+    margin: 0 auto;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  .responsive-audit {
+    width: 100%;
+  }
+}
