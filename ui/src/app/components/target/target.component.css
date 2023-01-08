@@ -4,4 +4,10 @@
   object-fit: cover;
 }
 
-
+.back-image{
+  background-image: url("../../../assets/background/target.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+}
