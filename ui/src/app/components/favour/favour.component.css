@@ -4,3 +4,29 @@
   object-fit: cover;
 }
 
+/* If the screen size is 1200px wide or more, set the font-size to 80px */
+@media (min-width: 1200px) {
+  .responsive-favour-font {
+    font-size: 16px;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  .responsive-favour-font {
+    font-size: 14px;
+  }
+}
+
+p {
+  font-family: Georgia;
+}
+
+.favour-title-font{
+  font-family: Georgia;
+  font-weight: 1000;
+}
+
+.favour-under-title-font{
+  font-family: Georgia;
+  font-style: italic;
+}
