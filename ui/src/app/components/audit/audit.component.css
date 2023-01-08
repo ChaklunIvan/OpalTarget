@@ -1,0 +1,6 @@
+.back-image{
+  background-image: url("src/assets/background/geometry.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60vh;
+}
