@@ -16,4 +16,7 @@
   .responsive-audit {
     width: 100%;
   }
-}
+
+}.form-select{
+  opacity: 80% !important;
+ }
