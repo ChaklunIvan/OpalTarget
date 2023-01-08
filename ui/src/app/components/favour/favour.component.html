@@ -7,7 +7,7 @@
       <div class="card">
         <div class="card-body">
           <h4 class="card-title favour-title-font">Простий</h4>
-          <h5 class="favour-under-title-font">до $300/місяць</h5>
+          <h5 class="favour-under-title-font">при бюджеті<br> до $300/місяць</h5>
           <div class="my-2" style="border-bottom: 1px solid gray"></div>
           <p class="card-text text-start responsive-favour-font">
             - Знайомство з продуктом<br>
@@ -29,7 +29,13 @@
             - Робота з блокуваннями<br>
             - Звіти по рекламі (кожен тиждень)
           </p>
-          <a href="#"><img src="assets/logo/logo.png" width="50px" alt=""></a>
+          <div class="my-2" style="border-bottom: 1px solid gray"></div>
+          <h5 class="favour-under-title-font">ЦіНА</h5>
+          <h5 class="favour-under-title-font d-inline text-decoration-line-through">$279</h5>
+          <h5 class="favour-under-title-font d-inline">-> $167</h5>
+          <br>
+          <br>
+          <button class="btn mx-lg-5" (click)="openVerticallyCentered(content1)" style="background: RGB(56,107,192); color: azure; width: 100px;">Замовити</button>
         </div>
       </div>
     </div>
@@ -38,7 +44,7 @@
       <div class="card">
         <div class="card-body">
           <h4 class="card-title favour-title-font">Для об'ємів</h4>
-          <h5 class="favour-under-title-font">від $300/місяць</h5>
+          <h5 class="favour-under-title-font">при бюджеті <br> від $300/місяць</h5>
           <div class="my-2" style="border-bottom: 1px solid gray"></div>
           <p class="card-text text-start responsive-favour-font">
             - Знайомство з продуктом<br>
@@ -61,7 +67,13 @@
             - Тестування гіпотез<br>
             - Звіти по рекламі (кожен тиждень)<br>
           </p>
-          <a href="#"><img src="assets/logo/logo.png" width="50px" alt=""></a>
+          <div class="my-2" style="border-bottom: 1px solid gray"></div>
+          <h5 class="favour-under-title-font">ЦіНА</h5>
+          <h5 class="favour-under-title-font d-inline text-decoration-line-through">$450</h5>
+          <h5 class="favour-under-title-font d-inline">-> $270</h5>
+          <br>
+          <br>
+          <button class="btn mx-lg-5" (click)="openVerticallyCentered(content2)" style="background: RGB(56,107,192); color: azure; width: 100px;">Замовити</button>
         </div>
       </div>
     </div>
@@ -70,7 +82,6 @@
       <div class="card">
         <div class="card-body">
           <h4 class="card-title favour-title-font">Тестовий тиждень</h4>
-          <h5 class="favour-under-title-font">Безкоштовно</h5>
           <div class="my-2" style="border-bottom: 1px solid gray;"></div>
           <p class="card-text text-start responsive-favour-font">
             - Знайомство з продуктом<br>
@@ -87,11 +98,14 @@
             - Прогрів бізнес сторінки та кабінету<br>
             - Розробка креативів<br>
             - Запуск реклами<br>
-            <br>
-            <br>
           </p>
-          <p class="responsive-favour-font" style="margin-top: 24px;  opacity: 50%">на першому тижні отримаємо перші заявки (якщо для роботи все готово);</p>
-          <a href="#"><img src="assets/logo/logo.png" width="50px" alt=""></a>
+          <p class="responsive-favour-font" style="margin-top: 24px;  opacity: 50%">отримаємо перші заявки, якщо для роботи все готово</p>
+          <div class="my-2" style="border-bottom: 1px solid gray"></div>
+          <h5 class="favour-under-title-font">ЦіНА</h5>
+          <h5 class="favour-under-title-font d-inline">за 6 днів - $54</h5>
+          <br>
+          <br>
+          <button class="btn mx-lg-5" (click)="openVerticallyCentered(content3)" style="background: RGB(56,107,192); color: azure; width: 100px;">Замовити</button>
         </div>
       </div>
     </div>
@@ -99,4 +113,41 @@
   </div>
 </div>
 
+<!--modal1-->
+<ng-template #content1 let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Простий</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+  </div>
+  <div class="modal-footer justify-content-center">
+    <button class="btn mx-lg-5" style="background: RGB(56,107,192); color: azure; width: 100px;">Надіслати</button>
+  </div>
+</ng-template>
 
+<!--modal2-->
+<ng-template #content2 let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Для об'ємів</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+  </div>
+  <div class="modal-footer justify-content-center">
+    <button class="btn mx-lg-5" style="background: RGB(56,107,192); color: azure; width: 100px;">Надіслати</button>
+  </div>
+</ng-template>
+
+<!--modal3-->
+<ng-template #content3 let-modal>
+  <div class="modal-header">
+    <h4 class="modal-title">Тестовий тиждень</h4>
+    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
+  </div>
+  <div class="modal-body">
+  </div>
+  <div class="modal-footer justify-content-center">
+    <button class="btn mx-lg-5" style="background: RGB(56,107,192); color: azure; width: 100px;">Надіслати</button>
+  </div>
+</ng-template>

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-favour',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class FavourComponent {
 
+  constructor(private modalService: NgbModal) { }
+
+  openVerticallyCentered(content: any) {
+    this.modalService.open(content, { centered: true });
+  }
+
 }
+
