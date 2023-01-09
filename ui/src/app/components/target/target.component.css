@@ -11,3 +11,21 @@
   background-size: cover;
   height: 100vh;
 }
+
+
+.target-font{
+  font-family: Georgia;
+  font-weight: 1000;
+}
+
+@media (min-width: 1200px) {
+  .responsive-target-font {
+    font-size: 60px;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 1199.98px) {
+  .responsive-target-font {
+    font-size: 30px;
+  }
+}
