@@ -30,3 +30,13 @@ p {
   font-family: Georgia;
   font-style: italic;
 }
+
+.favour-card-btn{
+  background: RGB(56,107,192);
+  color: azure;
+  width: 100px;
+}
+
+.form-select{
+  opacity: 80% !important;
+}
