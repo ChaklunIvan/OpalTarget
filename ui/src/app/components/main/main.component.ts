@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-main',
@@ -7,7 +7,8 @@ import { Component } from '@angular/core';
 })
 export class MainComponent {
 
-  scroll(el: HTMLElement){
+  scrollSpy(el: HTMLElement){
     el.scrollIntoView();
   }
+
 }

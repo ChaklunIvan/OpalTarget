@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './modules/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
+import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
 
 
 import { AppComponent } from './app.component';
@@ -27,6 +28,7 @@ import { AuditComponent } from './components/audit/audit.component';
     NgbModule,
     AppRoutingModule,
     HttpClientModule,
+    NgxHideOnScrollModule
   ],
   providers: [],
   bootstrap: [AppComponent]

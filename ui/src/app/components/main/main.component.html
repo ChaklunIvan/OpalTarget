@@ -1,6 +1,6 @@
 <header #main>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg py-3 target-color-bg">
+  <nav ngxHideOnScroll [classNameWhenHidden]="'nav--hidden'" class="navbar navbar-expand-lg py-3 target-color-bg" >
     <div class="container">
       <!-- Brand -->
       <a class="navbar-brand mx-lg-5" href="#">
@@ -17,10 +17,10 @@
         <!-- Pages -->
         <ul class="navbar-nav navbar-font me-auto" style="">
           <li class="nav-item">
-            <a class="nav-link active mx-lg-4" aria-current="page" (click)="scroll(main)">ГОЛОВНА</a>
+            <a class="nav-link active mx-lg-4" aria-current="page" (click)="scrollSpy(main)">ГОЛОВНА</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" (click)="scroll(favour)">ТАРИФИ</a>
+            <a class="nav-link" (click)="scrollSpy(favour)">ТАРИФИ</a>
           </li>
         </ul>
 
@@ -31,7 +31,7 @@
             <a>+380 68 833 67 03</a>
           </li>
           <li class="nav-item col-1">
-            <button class="btn mx-lg-5" style="background: RGB(56,107,192); color: azure; width: 150px;" (click)="scroll(audit)">Аудит</button>
+            <button class="btn mx-lg-5" style="background: RGB(56,107,192); color: azure; width: 150px;" (click)="scrollSpy(audit)">Аудит</button>
           </li>
         </ul>
       </div>
