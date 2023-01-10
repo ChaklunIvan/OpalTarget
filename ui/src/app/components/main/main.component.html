@@ -1,8 +1,55 @@
-<app-navbar></app-navbar>
+<header>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg py-3 target-color-bg">
+    <div class="container">
+      <!-- Brand -->
+      <a class="navbar-brand mx-lg-5" href="#">
+        <img src="./assets/logo/logo.png" alt="logo" width="70" class="d-inline-block align-top m-auto">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+
+        <!-- Pages -->
+        <ul class="navbar-nav navbar-font me-auto" style="">
+          <li class="nav-item">
+            <a class="nav-link active mx-lg-4" aria-current="page" (click)="scroll(target)">ГОЛОВНА</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" (click)="scroll(favour)">ТАРИФИ</a>
+          </li>
+        </ul>
+
+
+        <!-- Phone and button -->
+        <ul class="navbar-nav">
+          <li class="nav-item mx-lg-4 ">
+            <a>+380 68 833 67 03</a>
+          </li>
+          <li class="nav-item col-1">
+            <button class="btn mx-lg-5" style="background: RGB(56,107,192); color: azure; width: 150px;" (click)="scroll(audit)">Аудит</button>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </nav>
+</header>
+
 <div class="container">
-  <app-target></app-target>
-  <app-favour></app-favour>
-  <app-audit></app-audit>
+  <div #target>
+    <app-target></app-target>
+  </div>
+  <div #favour>
+    <app-favour></app-favour>
+  </div>
+  <div #audit>
+    <app-audit></app-audit>
+  </div>
 </div>
 <app-footer></app-footer>
 
