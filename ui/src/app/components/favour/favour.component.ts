@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import {ModalComponent} from "../modal/modal.component";
 
 @Component({
   selector: 'app-favour',
@@ -9,14 +10,27 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 export class FavourComponent {
 
-  modalTitle = "";
+  firstTitle = "Простий";
+  secondTitle = "Для об'ємів";
+  thirdTitle = "Тестовий тиждень";
 
-  constructor(private modalService: NgbModal) { }
+  constructor(private modalService: NgbModal) {
+  }
 
-  openVerticallyCentered(content: any, event: any) {
-    let target = event.target || event.srcElement || event.currentTarget;
-    this.modalTitle = target.getAttribute('value');
-    this.modalService.open(content, { centered: true });
+  openVerticallyCentered(event: any) {
+    const modalRef = this.modalService.open(ModalComponent, {centered: true});
+    switch (event.target.id){
+      case "firstBtn":
+        modalRef.componentInstance.title = this.firstTitle;
+        break;
+      case "secondBtn":
+        modalRef.componentInstance.title = this.secondTitle;
+        break;
+      case "thirdBtn":
+        modalRef.componentInstance.title = this.thirdTitle;
+        break;
+    }
   }
 }
+
 

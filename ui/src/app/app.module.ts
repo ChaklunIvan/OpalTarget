@@ -12,6 +12,7 @@ import { TargetComponent } from './components/target/target.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { FavourComponent } from './components/favour/favour.component';
 import { AuditComponent } from './components/audit/audit.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { AuditComponent } from './components/audit/audit.component';
     TargetComponent,
     FooterComponent,
     FavourComponent,
-    AuditComponent
+    AuditComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,

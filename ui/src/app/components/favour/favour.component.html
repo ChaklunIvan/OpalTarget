@@ -6,7 +6,7 @@
     <div class="col-md-4 my-4">
       <div class="card">
         <div class="card-body">
-          <h4 class="card-title favour-title-font">Простий</h4>
+          <h4 class="card-title favour-title-font">{{firstTitle}}</h4>
           <h5 class="favour-under-title-font">при бюджеті<br> до $300/місяць</h5>
           <div class="my-2" style="border-bottom: 1px solid gray"></div>
           <p class="card-text text-start responsive-favour-font">
@@ -35,7 +35,7 @@
           <h5 class="favour-under-title-font d-inline">-> $167</h5>
           <br>
           <br>
-          <button class="btn mx-lg-5 favour-card-btn" (click)="openVerticallyCentered(content, $event)" value="Простий">Замовити</button>
+          <button id="firstBtn" class="btn mx-lg-5 favour-card-btn" (click)="openVerticallyCentered($event)">Замовити</button>
         </div>
       </div>
     </div>
@@ -43,7 +43,7 @@
     <div class="col-md-4 my-4">
       <div class="card">
         <div class="card-body">
-          <h4 class="card-title favour-title-font">Для об'ємів</h4>
+          <h4 class="card-title favour-title-font">{{secondTitle}}</h4>
           <h5 class="favour-under-title-font">при бюджеті <br> від $300/місяць</h5>
           <div class="my-2" style="border-bottom: 1px solid gray"></div>
           <p class="card-text text-start responsive-favour-font">
@@ -73,7 +73,7 @@
           <h5 class="favour-under-title-font d-inline">-> $270</h5>
           <br>
           <br>
-          <button class="btn mx-lg-5 favour-card-btn" (click)="openVerticallyCentered(content, $event)" value="Для об'ємів">Замовити</button>
+          <button id="secondBtn" class="btn mx-lg-5 favour-card-btn" (click)="openVerticallyCentered($event)">Замовити</button>
         </div>
       </div>
     </div>
@@ -81,7 +81,7 @@
     <div class="col-md-4 my-4">
       <div class="card">
         <div class="card-body">
-          <h4 class="card-title favour-title-font" id="thirdCardId">Тестовий тиждень</h4>
+          <h4 class="card-title favour-title-font">{{thirdTitle}}</h4>
           <div class="my-2" style="border-bottom: 1px solid gray;"></div>
           <p class="card-text text-start responsive-favour-font">
             - Знайомство з продуктом<br>
@@ -105,7 +105,7 @@
           <h5 class="favour-under-title-font d-inline">за 6 днів - $54</h5>
           <br>
           <br>
-          <button class="btn mx-lg-5 favour-card-btn" (click)="openVerticallyCentered(content, $event)" value="Тестовий тиждень">Замовити</button>
+          <button id="thirdBtn" class="btn mx-lg-5 favour-card-btn" (click)="openVerticallyCentered($event)">Замовити</button>
         </div>
       </div>
     </div>
@@ -113,31 +113,36 @@
   </div>
 </div>
 
-<!--modal-->
-<ng-template #content let-modal>
-  <div class="modal-header">
-    <h4 class="modal-title">{{modalTitle}}</h4><br>
-    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>
-  </div>
-  <div class="modal-body">
-    <p style="opacity: 80%;">надішліть заявку і я відповім за 5 хвилин</p>
-    <div class="form-group my-3">
-      <input type="text" class="form-control" id="formInputName" placeholder="Ім'я">
-    </div>
-    <div class="form-group my-3">
-      <input type="text" class="form-control" id="formInputMail" placeholder="Номер телефона">
-    </div>
-    <div class="form-group my-3">
-      <select class="form-select" aria-label="Default select example">
-        <option selected >Оберіть мессенджер</option>
-        <option value="1">Telegram</option>
-        <option value="2">Instagram</option>
-        <option value="3">Viber</option>
-        <option value="4">Подзвонити по номеру телефона</option>
-      </select>
-    </div>
-  </div>
-  <div class="modal-footer d-flex justify-content-center">
-    <button class="btn mx-lg-5 favour-card-btn">Надіслати</button>
-  </div>
-</ng-template>
+
+<!--app-modal--><!--app-modal-->
+
+
+
+
+<!--<ng-template #content let-modal>-->
+<!--  <div class="modal-header">-->
+<!--    <h4 class="modal-title">{{modalTitle}}</h4><br>-->
+<!--    <button type="button" class="btn-close" aria-label="Close" (click)="modal.dismiss('Cross click')"></button>-->
+<!--  </div>-->
+<!--  <div class="modal-body">-->
+<!--    <p style="opacity: 80%;">надішліть заявку і я відповім за 5 хвилин</p>-->
+<!--    <div class="form-group my-3">-->
+<!--      <input type="text" class="form-control" id="formInputName" placeholder="Ім'я">-->
+<!--    </div>-->
+<!--    <div class="form-group my-3">-->
+<!--      <input type="text" class="form-control" id="formInputMail" placeholder="Номер телефона">-->
+<!--    </div>-->
+<!--    <div class="form-group my-3">-->
+<!--      <select class="form-select" aria-label="Default select example">-->
+<!--        <option selected >Оберіть мессенджер</option>-->
+<!--        <option value="1">Telegram</option>-->
+<!--        <option value="2">Instagram</option>-->
+<!--        <option value="3">Viber</option>-->
+<!--        <option value="4">Подзвонити по номеру телефона</option>-->
+<!--      </select>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--  <div class="modal-footer d-flex justify-content-center">-->
+<!--    <button class="btn mx-lg-5 favour-card-btn">Надіслати</button>-->
+<!--  </div>-->
+<!--</ng-template>-->
