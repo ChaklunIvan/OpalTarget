@@ -1,9 +1,11 @@
 using OpalTarget.Extensions;
+using System.Text.Json.Serialization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services
        .AddControllers()
+       .ConfigureJsonOptions()
        .Services
        .AddSwaggerGenerator();
 
