@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './modules/app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { NgxHideOnScrollModule } from 'ngx-hide-on-scroll';
-
+import {FormsModule} from "@angular/forms";
 
 import { AppComponent } from './app.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -25,13 +25,14 @@ import { ModalComponent } from './components/modal/modal.component';
     AuditComponent,
     ModalComponent
   ],
-  imports: [
-    BrowserModule,
-    NgbModule,
-    AppRoutingModule,
-    HttpClientModule,
-    NgxHideOnScrollModule
-  ],
+    imports: [
+        BrowserModule,
+        NgbModule,
+        AppRoutingModule,
+        HttpClientModule,
+        NgxHideOnScrollModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
