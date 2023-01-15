@@ -8,6 +8,7 @@ namespace OpalTarget.Models.Enums
 {
     public enum MessengerType
     {
+        Empty,
         Telegram,
         Instagram,
         Viber
