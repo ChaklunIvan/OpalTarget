@@ -15,13 +15,14 @@
         <div class="form-group my-3">
           <input type="text" class="form-control" id="formInputPhone" placeholder="Номер телефону">
         </div>
-        <div class="form-group my-3">
-          <select class="form-select" aria-label="Default select example">
-            <option selected >Оберіть мессенджер</option>
-            <option value="1">Telegram</option>
-            <option value="2">Instagram</option>
-            <option value="3">Viber</option>
+        <div class="form-group my-3 d-flex">
+          <select class="form-select" aria-label="Default select example" style="margin-right: 10px" (change)="messengerSelected()">
+            <option selected hidden> Оберіть мессенджер </option>
+            <option> Telegram </option>
+            <option>Instagram</option>
+            <option>Viber</option>
           </select>
+          <input type="username" class="form-control" placeholder="@username" [disabled]="disableUsernameInput">
         </div>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Для додаткової інформації"></textarea>
         <br>
