@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import {Audit} from "../../interfaces/audit";
+import {AuditService} from "../../services/audit.service";
+import {audit, empty} from "rxjs";
 
 @Component({
   selector: 'app-audit',
@@ -8,11 +10,13 @@ import {Audit} from "../../interfaces/audit";
 })
 export class AuditComponent {
 
+  constructor(private auditService: AuditService) {}
+
   audit: Audit = {
     name: '',
     email: '',
     phone: '',
-    messenger: 'Оберіть мессенджер',
+    messenger: '',
     username: '',
     description: ''
   }
@@ -21,6 +25,11 @@ export class AuditComponent {
 
   messengerSelected(){
     this.disableUsernameInput = false;
-    console.log(this.audit)
   }
+
+  sendAudit(){
+    this.auditService.sendAudit(this.audit)
+      .subscribe();
+  }
+
 }

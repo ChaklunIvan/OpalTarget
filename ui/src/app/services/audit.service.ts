@@ -9,6 +9,8 @@ const httpOptions = {
   })
 };
 
+const auditUrl = "https://localhost:7059/api/AuditForm";
+
 @Injectable({
   providedIn: 'root'
 })
@@ -17,7 +19,7 @@ export class AuditService {
   constructor(private http: HttpClient) { }
 
   sendAudit(audit: Audit) : Observable<Audit>{
-    return this.http.post<Audit>("", audit, httpOptions)
+    return this.http.post<Audit>(auditUrl, audit, httpOptions)
       .pipe(
         catchError(this.handleError)
       );
