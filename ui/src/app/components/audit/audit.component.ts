@@ -16,7 +16,7 @@ export class AuditComponent {
     name: '',
     email: '',
     phone: '',
-    messenger: '',
+    messenger: 'None',
     username: '',
     description: ''
   }
