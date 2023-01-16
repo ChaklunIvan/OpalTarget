@@ -17,7 +17,8 @@
         </div>
         <div class="form-group my-3 d-flex">
           <select class="form-select" style="margin-right: 10px" (change)="messengerSelected()" name="inputMessenger" [(ngModel)]="audit.messenger">
-            <option value=""> Telegram </option>
+            <option hidden selected disabled value="None"> Messenger </option>
+            <option> Telegram </option>
             <option>Instagram</option>
             <option>Viber</option>
           </select>
