@@ -16,10 +16,5 @@ namespace OpalTarget.Controllers
 
             return Ok();
         }
-        [HttpGet]
-        public async Task<AcceptedResult> GetBot()
-        {
-            var bot = 
-        }
     }
 }
