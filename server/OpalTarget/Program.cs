@@ -7,7 +7,8 @@ builder.Services
        .AddControllers()
        .ConfigureJsonOptions()
        .Services
-       .AddSwaggerGenerator();
+       .AddSwaggerGenerator()
+       .AddHttpTelegramBotClient(builder.Configuration);
 
 var app = builder.Build();
 
