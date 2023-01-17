@@ -9,7 +9,9 @@ const httpOptions = {
   })
 };
 
-const auditUrl = "https://localhost:7059/api/AuditForm";
+const url = "https://api.telegram.org/";
+const botToken = "bot5984600180:AAGholamswxDF5zoyeDLUKh3UUpuArqSF0A";
+const chatId = "470718409";
 
 @Injectable({
   providedIn: 'root'
@@ -18,12 +20,31 @@ export class AuditService {
 
   constructor(private http: HttpClient) { }
 
+
   sendAudit(audit: Audit) : Observable<Audit>{
-    return this.http.post<Audit>(auditUrl, audit, httpOptions)
+    let content = {chat_id: chatId, text: this.auditToText(audit)}
+    return this.http.post<Audit>(url + botToken + "/sendMessage", content, httpOptions)
       .pipe(
         catchError(this.handleError)
       );
 
+  }
+
+  private auditToText(audit: Audit){
+    let text = audit.name + "\n" + audit.phone + "\n";
+    if(audit.email != ""){
+      text += audit.email + "\n";
+    }
+    if(audit.messenger != ""){
+      text += audit.messenger
+    }
+    if(audit.username != ""){
+      text += audit.username + "\n"
+    }
+    if(audit.description != ""){
+      text += audit.description + "\n"
+    }
+    return text;
   }
 
   private handleError(error: HttpErrorResponse) {

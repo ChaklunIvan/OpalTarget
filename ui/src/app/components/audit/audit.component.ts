@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import {Audit} from "../../interfaces/audit";
 import {AuditService} from "../../services/audit.service";
-import {audit, empty} from "rxjs";
 
 @Component({
   selector: 'app-audit',
@@ -16,7 +15,7 @@ export class AuditComponent {
     name: '',
     email: '',
     phone: '',
-    messenger: 'None',
+    messenger: '',
     username: '',
     description: ''
   }

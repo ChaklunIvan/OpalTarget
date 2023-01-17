@@ -393,6 +393,9 @@ yarn-error.log
 # rollup-test output
 /modules/rollup-test/dist/
 
+#untrack server
+/server
+
 # User specific bazel settings
 .bazelrc.user
 
