@@ -7,5 +7,4 @@
 The page contains several forms for the client to fill out. Information from which, after sending, comes with a notification in telegram.
 <br>
 The design of the application is completely custom developed by me.
-<img src="https://github.com/ChaklunIvan/OpalTarget/blob/master/ui/src/assets/gifs/main-func.gif?raw=true" alt="">
 </h3>
