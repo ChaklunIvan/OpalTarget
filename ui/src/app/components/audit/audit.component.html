@@ -7,13 +7,19 @@
     <div class="card-body">
       <form>
         <div class="form-group my-3">
-          <input type="text" class="form-control" id="formInputName" placeholder="Ім'я" name="inputName" [(ngModel)]="audit.name">
+          <input required #name="ngModel" type="text" class="form-control" id="formInputName" placeholder="Ім'я" name="inputName" [(ngModel)]="audit.name">
+          <div *ngIf="name.invalid && (name.dirty || name.touched)">
+            <p class="text-start mx-2" style="color: red; font-size: 12px; opacity: 0.5">Required field</p>
+          </div>
         </div>
         <div class="form-group my-3">
           <input type="text" class="form-control" id="formInputMail" placeholder="Email" name="inputEmail" [(ngModel)]="audit.email">
         </div>
         <div class="form-group my-3">
-          <input type="text" class="form-control" id="formInputPhone" placeholder="Номер телефону" name="inputPhone" [(ngModel)]="audit.phone">
+          <input #phone="ngModel" required type="text" class="form-control" id="formInputPhone" placeholder="Номер телефону" name="inputPhone" [(ngModel)]="audit.phone">
+          <div *ngIf="phone.invalid && (phone.dirty || phone.touched)">
+            <p class="text-start mx-2" style="color: red; font-size: 12px; opacity: 0.5">Required field</p>
+          </div>
         </div>
         <div class="form-group my-3 d-flex">
           <select class="form-select" style="margin-right: 10px" (change)="messengerSelected()" name="inputMessenger" [(ngModel)]="audit.messenger">
@@ -31,4 +37,6 @@
     </div>
   </div>
 
+
 </div>
+

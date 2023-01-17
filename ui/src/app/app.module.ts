@@ -13,6 +13,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { FavourComponent } from './components/favour/favour.component';
 import { AuditComponent } from './components/audit/audit.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { ModalInfoComponent } from './components/modal-info/modal-info.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { ModalComponent } from './components/modal/modal.component';
     FooterComponent,
     FavourComponent,
     AuditComponent,
-    ModalComponent
+    ModalComponent,
+    ModalInfoComponent,
   ],
     imports: [
         BrowserModule,
