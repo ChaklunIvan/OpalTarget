@@ -42,6 +42,43 @@ p{
 /* If the screen size is smaller than 1200px, set the font-size to 80px */
 @media (max-width: 999.98px) {
   .responsive-target-cont {
-    padding-top: 150px;
+    padding-top: 125px;
   }
 }
+
+@media (min-width: 1000px) {
+  .responsive-target-font {
+    font-size: 16px;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 999.98px) {
+  .responsive-target-font {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1000px) {
+  .responsive-target-title-font {
+    font-size: 20px;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 999.98px) {
+  .responsive-target-title-font {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .responsive-target-img {
+    max-width: 100%;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 999.98px) {
+  .responsive-target-img {
+    margin-left: 25%;
+    max-width: 50%;
+  }
+}
+
