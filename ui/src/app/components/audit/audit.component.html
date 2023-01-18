@@ -22,13 +22,13 @@
           </div>
         </div>
         <div class="form-group my-3 d-flex">
-          <select class="form-select" style="margin-right: 10px" (change)="messengerSelected()" name="inputMessenger" [(ngModel)]="audit.messenger">
+          <select class="form-select" style="margin-right: 10px" name="inputMessenger" [(ngModel)]="audit.messenger">
             <option hidden selected disabled value=""> Messenger </option>
-            <option> Telegram </option>
+            <option>Telegram</option>
             <option>Instagram</option>
             <option>Viber</option>
+            <option>Подзвонити</option>
           </select>
-          <input type="username" class="form-control" placeholder="@username" [disabled]="disableUsernameInput" name="inputUsername" [(ngModel)]="audit.username">
         </div>
         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Для додаткової інформації" name="inputDescription" [(ngModel)]="audit.description"></textarea>
         <br>

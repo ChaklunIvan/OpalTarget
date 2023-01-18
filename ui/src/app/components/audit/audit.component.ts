@@ -22,12 +22,6 @@ export class AuditComponent {
     description: ''
   }
 
-  disableUsernameInput = true;
-
-  messengerSelected(){
-    this.disableUsernameInput = false;
-  }
-
   sendAudit(){
     const modalRef = this.modalService.open(ModalInfoComponent, {centered: true});
     if(this.audit.name == '' || this.audit.phone == ''){

@@ -2,12 +2,11 @@ import {Component, Inject} from '@angular/core';
 import {MainComponent} from "../main/main.component";
 
 @Component({
-  selector: 'app-target',
-  templateUrl: './target.component.html',
-  styleUrls: ['./target.component.css']
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.css']
 })
-export class TargetComponent{
-
+export class NavbarComponent {
   constructor(@Inject(MainComponent) private parent: MainComponent){
 
   }

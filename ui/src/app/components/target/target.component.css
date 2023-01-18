@@ -18,14 +18,30 @@
   font-weight: 1000;
 }
 
-@media (min-width: 1200px) {
-  .responsive-target-font {
-    font-size: 60px;
+p{
+  font-family: Georgia;
+}
+
+@media (min-width: 1000px) {
+  .responsive-target-card {
+    max-width: 700px;
   }
 }
 /* If the screen size is smaller than 1200px, set the font-size to 80px */
-@media (max-width: 1199.98px) {
-  .responsive-target-font {
-    font-size: 30px;
+@media (max-width: 999.98px) {
+  .responsive-target-card {
+    max-width: 250px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .responsive-target-cont {
+    padding-top: 300px;
+  }
+}
+/* If the screen size is smaller than 1200px, set the font-size to 80px */
+@media (max-width: 999.98px) {
+  .responsive-target-cont {
+    padding-top: 150px;
   }
 }
