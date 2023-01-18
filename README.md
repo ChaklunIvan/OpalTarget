@@ -10,10 +10,10 @@ The page contains several forms for the client to fill out. Information from whi
 <h3>The main technology is Angular🚩</h3>
 <h3>Notifications come with TelegramBotApi 🤖</h3>
 <h2>General View🈂</h2>
-<img src="https://github.com/ChaklunIvan/OpalTarget/blob/main/ui/src/assets/gifs/main-func.gif?raw=true" alt="">
+<img src="https://github.com/ChaklunIvan/OpalTarget/blob/main/ui/src/assets/gifs/main-view.gif?raw=true" alt="">
 <h2>Notification💬</h2>
-<img src="https://github.com/ChaklunIvan/OpalTarget/blob/main/ui/src/assets/gifs/audit-notify.gif?raw=true" alt="">
-<img src="https://github.com/ChaklunIvan/OpalTarget/blob/main/ui/src/assets/gifs/favour-form.gif?raw=true" alt="">
+<img src="https://github.com/ChaklunIvan/OpalTarget/blob/main/ui/src/assets/gifs/audit-notification.gif?raw=true" alt="">
+<img src="https://github.com/ChaklunIvan/OpalTarget/blob/main/ui/src/assets/gifs/favour-notification.gif?raw=true" alt="">
 <h2>Responsiveness📲</h2>
-<img src="https://github.com/ChaklunIvan/OpalTarget/blob/main/ui/src/assets/gifs/responsive.gif?raw=true" alt="">
+<img src="https://github.com/ChaklunIvan/OpalTarget/blob/main/ui/src/assets/gifs/main-responsive.gif?raw=true" alt="">
 
